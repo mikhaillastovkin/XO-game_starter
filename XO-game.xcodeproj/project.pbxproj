@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7426838827BA3E4F00294FA5 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426838727BA3E4F00294FA5 /* GameState.swift */; };
+		7426838B27BA403D00294FA5 /* PlayerInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426838A27BA403D00294FA5 /* PlayerInputState.swift */; };
+		7426838D27BA425700294FA5 /* GameEndedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426838C27BA425700294FA5 /* GameEndedState.swift */; };
+		7426838F27BA470900294FA5 /* ComputerPlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426838E27BA470900294FA5 /* ComputerPlayerState.swift */; };
+		7426839127BA4C0900294FA5 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426839027BA4C0900294FA5 /* MainMenuViewController.swift */; };
+		7426839527BA571500294FA5 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426839427BA571500294FA5 /* State.swift */; };
+		74E9DEFE27BFE5FE0036DD0A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9DEFD27BFE5FE0036DD0A /* Command.swift */; };
+		74E9DF0027BFE75F0036DD0A /* AddMarkCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9DEFF27BFE75F0036DD0A /* AddMarkCommand.swift */; };
+		74E9DF0227BFEA300036DD0A /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9DF0127BFEA300036DD0A /* CommandManager.swift */; };
+		74E9DF0427BFEBD10036DD0A /* FiveToFiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9DF0327BFEBD10036DD0A /* FiveToFiveState.swift */; };
 		F874E4712224621100364CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F874E4702224621100364CAE /* AppDelegate.swift */; };
 		F874E4732224621100364CAE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F874E4722224621100364CAE /* GameViewController.swift */; };
 		F874E4762224621100364CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F874E4742224621100364CAE /* Main.storyboard */; };
@@ -24,6 +34,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7426838727BA3E4F00294FA5 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		7426838A27BA403D00294FA5 /* PlayerInputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInputState.swift; sourceTree = "<group>"; };
+		7426838C27BA425700294FA5 /* GameEndedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndedState.swift; sourceTree = "<group>"; };
+		7426838E27BA470900294FA5 /* ComputerPlayerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerPlayerState.swift; sourceTree = "<group>"; };
+		7426839027BA4C0900294FA5 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		7426839427BA571500294FA5 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		74E9DEFD27BFE5FE0036DD0A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		74E9DEFF27BFE75F0036DD0A /* AddMarkCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMarkCommand.swift; sourceTree = "<group>"; };
+		74E9DF0127BFEA300036DD0A /* CommandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
+		74E9DF0327BFEBD10036DD0A /* FiveToFiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveToFiveState.swift; sourceTree = "<group>"; };
 		F874E46D2224621100364CAE /* XO-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XO-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F874E4702224621100364CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F874E4722224621100364CAE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +73,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7426838927BA402D00294FA5 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				7426838727BA3E4F00294FA5 /* GameState.swift */,
+				7426838A27BA403D00294FA5 /* PlayerInputState.swift */,
+				7426838C27BA425700294FA5 /* GameEndedState.swift */,
+				7426838E27BA470900294FA5 /* ComputerPlayerState.swift */,
+				74E9DF0327BFEBD10036DD0A /* FiveToFiveState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		74E9DEFC27BFE5E20036DD0A /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				74E9DEFD27BFE5FE0036DD0A /* Command.swift */,
+				74E9DEFF27BFE75F0036DD0A /* AddMarkCommand.swift */,
+				74E9DF0127BFEA300036DD0A /* CommandManager.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 		F874E4642224621100364CAE = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				F874E4702224621100364CAE /* AppDelegate.swift */,
+				7426838927BA402D00294FA5 /* State */,
+				74E9DEFC27BFE5E20036DD0A /* Command */,
 				F874E4722224621100364CAE /* GameViewController.swift */,
+				7426839027BA4C0900294FA5 /* MainMenuViewController.swift */,
 				F874E4F02225DFF700364CAE /* Referee.swift */,
 				F874E4E62225CB3F00364CAE /* Models */,
 				F874E4E52225CB3100364CAE /* Views */,
@@ -108,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F874E4DC2225C25D00364CAE /* GameboardPosition.swift */,
+				7426839427BA571500294FA5 /* State.swift */,
 				F874E4F22225E0B100364CAE /* GameboardSize.swift */,
 				F874E4F42225E2CD00364CAE /* Gameboard.swift */,
 				F874E4EE2225DE4500364CAE /* Player.swift */,
@@ -186,17 +232,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7426839127BA4C0900294FA5 /* MainMenuViewController.swift in Sources */,
 				F874E4732224621100364CAE /* GameViewController.swift in Sources */,
+				74E9DF0427BFEBD10036DD0A /* FiveToFiveState.swift in Sources */,
 				F874E4DD2225C25D00364CAE /* GameboardPosition.swift in Sources */,
 				F874E4DF2225C76000364CAE /* MarkView.swift in Sources */,
+				7426838F27BA470900294FA5 /* ComputerPlayerState.swift in Sources */,
+				74E9DF0227BFEA300036DD0A /* CommandManager.swift in Sources */,
+				74E9DEFE27BFE5FE0036DD0A /* Command.swift in Sources */,
 				F874E4F12225DFF700364CAE /* Referee.swift in Sources */,
 				F874E4F52225E2CD00364CAE /* Gameboard.swift in Sources */,
 				F874E4712224621100364CAE /* AppDelegate.swift in Sources */,
 				F874E4E22225CABF00364CAE /* OView.swift in Sources */,
 				F874E4F32225E0B100364CAE /* GameboardSize.swift in Sources */,
 				F874E4E42225CB0700364CAE /* XView.swift in Sources */,
+				7426838D27BA425700294FA5 /* GameEndedState.swift in Sources */,
+				7426838827BA3E4F00294FA5 /* GameState.swift in Sources */,
+				7426839527BA571500294FA5 /* State.swift in Sources */,
+				7426838B27BA403D00294FA5 /* PlayerInputState.swift in Sources */,
 				F874E4DB2225C1AC00364CAE /* GameboardView.swift in Sources */,
 				F874E4EF2225DE4500364CAE /* Player.swift in Sources */,
+				74E9DF0027BFE75F0036DD0A /* AddMarkCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
